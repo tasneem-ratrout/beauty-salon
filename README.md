@@ -87,6 +87,11 @@ This project was developed as part of academic training to practice:
 
 ---
 
+## 📄 Project Documentation
+
+[Download Project Documentation (PDF)](https://drive.google.com/file/d/1s1Ogt4Wz52Mdj4B1crzo6Eplr8Ssfntg/view?usp=sharing)
+---
+
 ## 👩🏻‍💻 Author
 
 Tasneem Ratrout  
