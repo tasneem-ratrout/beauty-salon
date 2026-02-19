@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="408.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.beautySalonPro.makeuocontroller">
+   <children>
+      <AnchorPane onMouseClicked="#beforeLabelAction" onMousePressed="#beforeLabelAction" prefHeight="602.0" prefWidth="435.0" style="-fx-background-color: #ffffff;">
+         <children>
+            <Pane layoutX="17.0" prefHeight="61.0" prefWidth="446.0" style="-fx-background-color: #ef5485;">
+               <children>
+                  <Label fx:id="beforepage" layoutX="33.0" layoutY="-1.0" prefHeight="69.0" prefWidth="21.0" text="&lt;">
+                     <font>
+                        <Font name="System Bold" size="30.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="123.0" layoutY="1.0" prefHeight="66.0" prefWidth="200.0" text="MAKE UP " textFill="WHITE">
+                     <font>
+                        <Font name="Century" size="30.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <TabPane layoutX="26.0" layoutY="62.0" prefHeight="540.0" prefWidth="408.0" stylesheets="@style.css" tabClosingPolicy="UNAVAILABLE">
+               <tabs>
+                  <Tab text="Booking">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <ChoiceBox fx:id="dayChoiceBox" layoutX="16.0" layoutY="38.0" prefWidth="150.0" stylesheets="@style.css">
+                                 <styleClass>
+                                    <String fx:value="button" />
+                                    <String fx:value="choice-box" />
+                                 </styleClass>
+                              </ChoiceBox>
+                              <Label layoutX="30.0" layoutY="11.0" text="Day">
+                                 <font>
+                                    <Font name="Calibri" size="20.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="252.0" layoutY="11.0" text="Hour">
+                                 <font>
+                                    <Font name="Calibri" size="20.0" />
+                                 </font>
+                              </Label>
+                              <ChoiceBox fx:id="hourChoiceBox" layoutX="241.0" layoutY="38.0" prefWidth="150.0" stylesheets="@style.css">
+                                 <styleClass>
+                                    <String fx:value="button" />
+                                    <String fx:value="choice-box" />
+                                 </styleClass>
+                              </ChoiceBox>
+                              <ListView fx:id="employeesListView" layoutX="21.0" layoutY="107.0" prefHeight="309.0" prefWidth="364.0" />
+                              <Button fx:id="bookingnow" layoutX="143.0" layoutY="440.0" mnemonicParsing="false" onMouseClicked="#bookingnowaction" onMousePressed="#bookingnowaction" text="booking now" />
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab text="Information">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <ImageView fitHeight="172.0" fitWidth="142.0" layoutX="133.0" layoutY="303.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@imageBeautysalon/qq.png" />
+                                 </image>
+                              </ImageView>
+                              <TextArea fx:id="descriptionTextArea" editable="false" layoutX="14.0" layoutY="14.0" prefHeight="142.0" prefWidth="384.0" promptText="Description" style="-fx-font-size: 16px; -fx-font-family: 'Calibri';" />
+                              <Label layoutX="14.0" layoutY="167.0" style="-fx-font-weight: bold; -fx-font-size: 14px;" text="Price:">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Label>
+                              <TextArea fx:id="priceTextArea" editable="false" layoutX="14.0" layoutY="190.0" prefHeight="76.0" prefWidth="386.0" promptText="Enter price" style="-fx-font-size: 16px; -fx-font-family: 'Calibri';" />
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+               </tabs>
+            </TabPane>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="408.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.beautySalonPro.ProfileuserController">
+   <children>
+      <Pane prefHeight="756.0" prefWidth="408.0" style="-fx-background-color: #FFFFFF;">
+         <children>
+            <Label layoutX="140.0" prefHeight="66.0" prefWidth="294.0" text="profile" textFill="#ef5485">
+               <font>
+                  <Font name="Century" size="35.0" />
+               </font>
+            </Label>
+            <Label layoutX="40.0" layoutY="120.0" text="UserName :">
+               <font>
+                  <Font name="System Bold Italic" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="40.0" layoutY="163.0" text="First Name  :">
+               <font>
+                  <Font name="System Bold Italic" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="40.0" layoutY="203.0" text="Last Name :">
+               <font>
+                  <Font name="System Bold Italic" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="40.0" layoutY="246.0" text="contact :">
+               <font>
+                  <Font name="System Bold Italic" size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="usernameField" layoutX="170.0" layoutY="120.0" />
+<TextField fx:id="firstNameField" layoutX="170.0" layoutY="163.0" />
+<TextField fx:id="lastNameField" layoutX="170.0" layoutY="203.0" />
+<TextField fx:id="contactField" layoutX="170.0" layoutY="246.0" />
+
+            <Button layoutX="212.0" layoutY="310.0" mnemonicParsing="false" onMouseClicked="#editProfileAction" prefHeight="36.0" prefWidth="149.0" stylesheets="@style.css" text="edit profile" />
+
+            <Button fx:id="password" layoutX="28.0" layoutY="310.0" mnemonicParsing="false" onMouseClicked="#passwordaction" onMousePressed="#passwordaction" stylesheets="@style.css" text="change password" />
+            <ImageView fitHeight="52.0" fitWidth="60.0" layoutX="20.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@imageBeautysalon/6997662.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <VBox alignment="BOTTOM_CENTER" maxHeight="60.0" prefHeight="44.0" prefWidth="408.0" StackPane.alignment="BOTTOM_RIGHT">
+         <children>
+            <HBox alignment="CENTER" prefHeight="126.0" prefWidth="408.0" style="-fx-spacing: 35; -fx-background-color: #FFC0CB;">
+               <children>
+                  <Button fx:id="home" ellipsisString="...." graphicTextGap="5.0" mnemonicParsing="false" onMouseClicked="#homeaction" onMousePressed="#homeaction" prefHeight="40.0" prefWidth="60.0" style="-fx-background-color: rgba(255, 255, 255, 0);">
+                     <graphic>
+                        <ImageView fitHeight="28.0" fitWidth="58.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@imageBeautysalon/1946436.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button graphicTextGap="5.0" layoutX="188.0" layoutY="20.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="60.0" style="-fx-background-color: rgba(255, 255, 255, 0);">
+                     <graphic>
+                        <ImageView fx:id="profile" fitHeight="28.0" fitWidth="58.0" onMouseClicked="#profileaction" onMousePressed="#profileaction" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@imageBeautysalon/456212.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="Myreservations" graphicTextGap="5.0" layoutX="235.0" layoutY="12.0" mnemonicParsing="false" onMouseClicked="#Myreservationsaction" onMousePressed="#Myreservationsaction" prefHeight="40.0" prefWidth="60.0" style="-fx-background-color: rgba(255, 255, 255, 0);">
+                     <graphic>
+                        <ImageView fitHeight="28.0" fitWidth="58.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@imageBeautysalon/2460863.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="logout" graphicTextGap="5.0" layoutX="89.0" layoutY="20.0" mnemonicParsing="false" onMouseClicked="#logoutaction" onMousePressed="#logoutaction" prefHeight="40.0" prefWidth="60.0" style="-fx-background-color: rgba(255, 255, 255, 0);">
+                     <graphic>
+                        <ImageView fitHeight="28.0" fitWidth="58.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@imageBeautysalon/3889524.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</StackPane>

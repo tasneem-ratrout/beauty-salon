@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="408.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.beautySalonPro.profileEmpcontroller">
+   <children>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <Label layoutX="61.0" layoutY="19.0" text="my profile">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="45.0" fitWidth="41.0" layoutX="14.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@imageBeautysalon/3135789.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="back" fitHeight="48.0" fitWidth="41.0" layoutX="353.0" layoutY="538.0" onMouseClicked="#backaction" onMousePressed="#backaction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@imageBeautysalon/3037334.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="61.0" layoutY="104.0" text="username">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="61.0" layoutY="140.0" text="first name">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="60.0" layoutY="185.0" text="last name">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="60.0" layoutY="225.0" text="salary">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="65.0" layoutY="256.0" text="SSN">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="usernameField" layoutX="155.0" layoutY="102.0" promptText="username" />
+            <TextField fx:id="firstNameField" layoutX="155.0" layoutY="147.0" promptText="first name" />
+            <TextField fx:id="lastNameField" layoutX="155.0" layoutY="182.0" promptText="last name" />
+            <TextField fx:id="salaryField" editable="false" layoutX="155.0" layoutY="222.0" promptText="salary" />
+            <TextField fx:id="ssnField" layoutX="155.0" layoutY="253.0" promptText="ssn " />
+            <Button fx:id="changepass" layoutX="46.0" layoutY="332.0" mnemonicParsing="false" onAction="#changepassaction" stylesheets="@style.css" text="changr password" />
+            <Button fx:id="updateUsernamepp" layoutX="225.0" layoutY="332.0" mnemonicParsing="false" onAction="#update" stylesheets="@style.css" text="edit profile " />
+            <ImageView fitHeight="231.0" fitWidth="320.0" layoutX="35.0" layoutY="369.0" opacity="0.2" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@imageBeautysalon/istockphoto-1475546122-612x612.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

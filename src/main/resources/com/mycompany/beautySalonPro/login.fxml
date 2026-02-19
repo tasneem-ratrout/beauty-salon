@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="575.0" prefWidth="408.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.beautySalonPro.LoginController">
+   <children>
+      <AnchorPane prefHeight="575.0" prefWidth="489.0" style="-fx-background-color: #ffffff;">
+         <children>
+            <ImageView fitHeight="189.0" fitWidth="197.0" layoutX="98.0" layoutY="67.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@imageBeautysalon/login1.jpg" />
+               </image>
+            </ImageView>
+            <Pane layoutX="-32.0" prefHeight="60.0" prefWidth="450.0" style="-fx-background-color: #f68caa;">
+               <children>
+                  <Label layoutX="193.0" layoutY="13.0" prefHeight="35.0" prefWidth="64.0" text="Login" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="Bodoni MT Bold" size="26.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <TextField fx:id="usernameField" layoutX="140.0" layoutY="339.0" promptText="enter username" />
+            <TextField fx:id="passwordField" layoutX="140.0" layoutY="384.0" promptText="enter password" />
+            <ChoiceBox fx:id="roleChoiceBox" layoutX="140.0" layoutY="288.0" prefWidth="150.0" />
+            <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="90.0" layoutY="336.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@imageBeautysalon/1077114.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="90.0" layoutY="384.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@imageBeautysalon/807292.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="90.0" layoutY="288.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@imageBeautysalon/471664.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="loginButton" layoutX="97.0" layoutY="431.0" mnemonicParsing="false" onMouseClicked="#handleLogin" prefHeight="26.0" prefWidth="189.0" styleClass="pay_bttn" stylesheets="@style.css" text="Login" />
+            <Label fx:id="RESETLabelAE" layoutX="211.0" layoutY="479.0" onMouseClicked="#RLabelAction" onMousePressed="#RLabelAction" prefHeight="18.0" prefWidth="86.0" text="Reset it here">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+            <Label layoutX="103.0" layoutY="479.0" prefHeight="6.0" prefWidth="102.0" text="Forgot password?">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="90.0" layoutY="529.0" text="Don't have account?">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="signupLabelAE" layoutX="223.0" layoutY="529.0" onMouseClicked="#signupLabelAction" onMousePressed="#signupLabelAction" text="sign up">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

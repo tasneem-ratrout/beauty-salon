@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="408.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.beautySalonPro.employeePagecontroller">
+   <children>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <ImageView fitHeight="330.0" fitWidth="500.0" layoutY="-30.0" opacity="0.36" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@imageBeautysalon/istockphoto-511052762-612x612.jpg" />
+               </image>
+            </ImageView>
+            <Button fx:id="mybokking" layoutX="41.0" layoutY="364.0" mnemonicParsing="false" onAction="#mybokkingaction" prefHeight="78.0" prefWidth="170.0" stylesheets="@style.css" text="my booking">
+               <graphic>
+                  <ImageView fitHeight="49.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@imageBeautysalon/7050939.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Pane layoutX="14.0" layoutY="35.0" prefHeight="57.0" prefWidth="198.0" styleClass="tab-pane" stylesheets="@style.css">
+               <children>
+                  <Label layoutX="18.0" layoutY="11.0" text="Welcome back!">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Button fx:id="myprofile" layoutX="232.0" layoutY="364.0" mnemonicParsing="false" onAction="#myprofileaction" prefHeight="78.0" prefWidth="170.0" stylesheets="@style.css" text="my profile">
+               <graphic>
+                  <ImageView fitHeight="49.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@imageBeautysalon/3135789.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="logout" layoutX="96.0" layoutY="502.0" mnemonicParsing="false" onAction="#logoutaction" prefHeight="50.0" prefWidth="231.0" stylesheets="@style.css" text="Log out">
+               <graphic>
+                  <ImageView fx:id="logout" fitHeight="42.0" fitWidth="39.0" onDragDetected="#logoutaction" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@imageBeautysalon/4043198.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

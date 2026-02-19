@@ -1,0 +1,162 @@
+.side_anchor {
+    -fx-border-width: 2px;
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20px;
+    -fx-border-style: solid;
+    -fx-border-color: #D48A97; /* زهري غامق */
+}
+
+.inner_pane {
+    -fx-border-width: 2px;
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20px;
+    -fx-border-style: solid;
+    -fx-border-color: #E7A1B0; /* زهري فاتح */
+}
+
+.pay_bttn {
+    -fx-background-color: linear-gradient(
+        from 0% 0% to 100% 100%, 
+        #F8BBD0, /* زهري فاتح */
+        #EC407A  /* زهري متوسط */
+    );
+    -fx-text-fill: white;
+    -fx-border-width: 2px;
+    -fx-border-radius: 50px;
+    -fx-background-radius: 50px;
+    -fx-border-style: solid;
+    -fx-border-color: #E91E63; /* زهري معتدل */
+    -fx-font-family: "Century Gothic";
+    -fx-font-size: 16px;
+}
+
+.pay_bttn:hover {
+    -fx-background-color: linear-gradient(
+        from 0% 0% to 100% 100%, 
+        #F48FB1, /* زهري فاتح */
+        #F06292, /* زهري متوسط */
+        #F8BBD0  /* زهري فاتح */
+    );
+    -fx-text-fill: black;
+    -fx-border-color: #F8BBD0; /* زهري فاتح */
+}
+
+.pay_bttn:pressed {
+    -fx-background-color: #D81B60; /* زهري داكن */
+    -fx-border-color: #AD1457; /* زهري أغمق */
+    -fx-text-fill: white;
+}
+
+.table {
+    -fx-background-color: #F8BBD0; /* زهري زيتوني فاتح */
+    -fx-border-width: 3px;
+    -fx-border-radius: 3px;
+    -fx-background-radius: 3px;
+    -fx-border-style: solid;
+    -fx-border-color: #E91E63; /* زهري */
+}
+
+.HBox {
+    -fx-background-color: linear-gradient(
+        from 0% 0% to 100% 100%, 
+        #F48FB1, /* زهري خشبي */
+        #EC407A, /* زهري مائل للأحمر */
+        #D81B60, /* زهري داكن */
+        #F8BBD0, /* زهري فاتح */
+        #EC407A  /* زهري مائل للأحمر */
+    );
+}
+
+.Column {
+    -fx-background-color: #D81B60; /* زهري داكن */
+}
+
+.shadow {
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 10, 0, 0, 4);
+}
+
+.rep_bttn:hover {
+    -fx-background-color: linear-gradient(
+        from 0% 0% to 100% 100%, 
+        #C2185B, /* زهري غامق */
+        #F48FB1  /* زهري فاتح */
+    );
+    -fx-text-fill: black;
+    -fx-border-color: #F8BBD0; /* زهري فاتح */
+}
+
+.rep_bttn:pressed {
+    -fx-background-color: #D81B60; /* زهري داكن */
+    -fx-border-color: #AD1457; /* زهري داكن */
+    -fx-text-fill: white;
+}
+
+.label_Font:hover {
+    text-decoration: underline; /* إضافة خط تحت النص */
+    text-decoration-color: #dc1e5a; /* اللون الزهري */
+}
+
+.button {
+    -fx-background-radius: 20; /* يعطي الزر زوايا مستديرة */
+    -fx-background-color: linear-gradient(to right, #d9a7c7, #fffcdc); /* تدرج لوني */
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.25), 10, 0, 0, 4); /* تأثير الظل */
+    -fx-font-size: 16px; /* حجم النص */
+    -fx-font-weight: bold; /* جعل النص عريض */
+    -fx-text-fill: white; /* لون النص */
+}
+
+/* تأثير عند مرور الماوس فوق الزر */
+.button:hover {
+    -fx-background-color: linear-gradient(to right, #c98cba, #ffebc9); /* تدرج لوني أغمق */
+}
+
+.choice-box .list-view {
+    -fx-font-family: "Calibri"; /* نوع الخط */
+    -fx-font-size: 14px; /* حجم الخط */
+    -fx-font-weight: normal; /* جعل الوزن عادي لتقليل السُمك */
+}
+
+
+
+.tab-pane {
+    -fx-background-color: #FFFFFF; /* خلفية TapPane بيضاء */
+}
+
+.tab {
+    -fx-background-color: #FFC0CB; /* لون التاب زهري فاتح */
+}
+
+.tab:selected {
+    -fx-background-color: #FFB6C1; /* لون التاب عند التحديد */
+}
+
+.tab-label {
+    -fx-text-fill: #FFFFFF; /* لون خط أبيض لنص التاب */
+}
+.list-view .list-cell {
+    -fx-background-color: #ffffff; /* خلفية الخلايا */
+    -fx-text-fill: #333333; /* لون النص */
+    -fx-font-size: 14px; /* حجم الخط */
+    -fx-padding: 2px; /* تقليل padding حول النص */
+    -fx-border-color: #dddddd;
+    -fx-border-width: 0 0 1px 0; /* خط أسفل كل عنصر */
+}
+
+/* تنسيق عنصر عند التمرير عليه */
+.list-view .list-cell:hover {
+    -fx-background-color: #e0f7fa; /* خلفية عند التمرير */
+}
+
+/* تنسيق العنصر المحدد */
+.list-view .list-cell:selected {
+    -fx-background-color: #c5cae9; /* لون الخلفية عند التحديد */
+    -fx-text-fill: #ffffff; /* لون النص عند التحديد */
+}
+
+/* تنسيق الأزرار داخل ListView */
+.list-view .list-cell .button {
+    -fx-padding: 0; /* إزالة المسافة داخل الزر */
+    -fx-margin: 0;  /* إزالة المسافة حول الزر */
+    -fx-alignment: center-left; /* الزر قريب من الجهة اليسرى */
+}
+

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="408.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.beautySalonPro.UserController">
+   <children>
+      <ScrollPane hbarPolicy="NEVER" prefHeight="150.0" prefWidth="408.0" vbarPolicy="ALWAYS">
+         <content>
+            <Pane prefHeight="756.0" prefWidth="408.0" style="-fx-background-color: #FFFFFF;">
+               <children>
+                  <TextField layoutX="22.0" layoutY="65.0" prefHeight="25.0" prefWidth="339.0" promptText="Search" />
+                  <ImageView fitHeight="25.0" fitWidth="31.0" layoutX="362.0" layoutY="65.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@imageBeautysalon/64673.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="57.0" prefHeight="66.0" prefWidth="294.0" text="BEAUTY SALON" textFill="#ef5485">
+                     <font>
+                        <Font name="Century" size="35.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="pagehaircut" contentDisplay="RIGHT" layoutX="21.0" layoutY="139.0" mnemonicParsing="false" nodeOrientation="RIGHT_TO_LEFT" onAction="#pagehairaction" prefHeight="58.0" prefWidth="365.0" stylesheets="@style.css" text="HAIR CUTS" textAlignment="RIGHT">
+                     <graphic>
+                        <ImageView fitHeight="60.0" fitWidth="82.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@imageBeautysalon/11376639.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Label layoutX="24.0" layoutY="90.0" prefHeight="52.0" prefWidth="130.0" text="services">
+                     <font>
+                        <Font name="Calisto MT" size="27.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="color" alignment="BOTTOM_CENTER" contentDisplay="RIGHT" layoutX="22.0" layoutY="232.0" mnemonicParsing="false" nodeOrientation="RIGHT_TO_LEFT" onAction="#coloraction" prefHeight="66.0" prefWidth="365.0" stylesheets="@style.css" text="COLORING" textAlignment="RIGHT">
+                     <graphic>
+                        <ImageView fitHeight="60.0" fitWidth="220.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@imageBeautysalon/7305226.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="styling" alignment="BOTTOM_CENTER" contentDisplay="RIGHT" layoutX="21.0" layoutY="327.0" mnemonicParsing="false" nodeOrientation="RIGHT_TO_LEFT" onAction="#stylingaction" prefHeight="66.0" prefWidth="365.0" stylesheets="@style.css" text="Hair Styling" textAlignment="RIGHT">
+                     <graphic>
+                        <ImageView fitHeight="60.0" fitWidth="220.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@imageBeautysalon/17723630.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="makeup" alignment="BOTTOM_CENTER" contentDisplay="RIGHT" layoutX="24.0" layoutY="417.0" mnemonicParsing="false" nodeOrientation="RIGHT_TO_LEFT" onAction="#makeupaction" prefHeight="66.0" prefWidth="365.0" stylesheets="@style.css" text="MAKE UP" textAlignment="RIGHT">
+                     <graphic>
+                        <ImageView fitHeight="60.0" fitWidth="220.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@imageBeautysalon/3163195.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="nails" alignment="BOTTOM_CENTER" contentDisplay="RIGHT" layoutX="24.0" layoutY="506.0" mnemonicParsing="false" nodeOrientation="RIGHT_TO_LEFT" onAction="#nailsaction" prefHeight="66.0" prefWidth="365.0" stylesheets="@style.css" text="NAILS" textAlignment="RIGHT">
+                     <graphic>
+                        <ImageView fitHeight="60.0" fitWidth="220.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@imageBeautysalon/599560.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="spa" alignment="BOTTOM_CENTER" contentDisplay="RIGHT" layoutX="24.0" layoutY="595.0" mnemonicParsing="false" nodeOrientation="RIGHT_TO_LEFT" onAction="#spaaction" prefHeight="66.0" prefWidth="365.0" stylesheets="@style.css" text="BODY SPA" textAlignment="RIGHT">
+                     <graphic>
+                        <ImageView fitHeight="60.0" fitWidth="220.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@imageBeautysalon/5154685.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </Pane>
+         </content>
+      </ScrollPane>
+      <VBox alignment="BOTTOM_CENTER" maxHeight="60.0" prefHeight="44.0" prefWidth="408.0" StackPane.alignment="BOTTOM_RIGHT">
+         <children>
+            <HBox alignment="CENTER" prefHeight="126.0" prefWidth="408.0" style="-fx-spacing: 35; -fx-background-color: #FFC0CB;">
+               <children>
+                  <Button fx:id="home" ellipsisString="...." graphicTextGap="5.0" mnemonicParsing="false" onMouseClicked="#homeaction" onMousePressed="#homeaction" prefHeight="40.0" prefWidth="60.0" style="-fx-background-color: rgba(255, 255, 255, 0);">
+                     <graphic>
+                        <ImageView fitHeight="28.0" fitWidth="58.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@imageBeautysalon/1946436.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="profileuser" graphicTextGap="5.0" layoutX="188.0" layoutY="20.0" mnemonicParsing="false" onMouseClicked="#profileuseraction" onMousePressed="#profileuseraction" prefHeight="40.0" prefWidth="60.0" style="-fx-background-color: rgba(255, 255, 255, 0);">
+                     <graphic>
+                        <ImageView fitHeight="28.0" fitWidth="58.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@imageBeautysalon/456212.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="Myreservations" graphicTextGap="5.0" layoutX="235.0" layoutY="12.0" mnemonicParsing="false" onMouseClicked="#Myreservationsaction" onMousePressed="#Myreservationsaction" prefHeight="40.0" prefWidth="60.0" style="-fx-background-color: rgba(255, 255, 255, 0);">
+                     <graphic>
+                        <ImageView fitHeight="28.0" fitWidth="58.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@imageBeautysalon/2460863.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="logout" graphicTextGap="5.0" layoutX="89.0" layoutY="20.0" mnemonicParsing="false" onMouseClicked="#logoutaction" onMousePressed="#logoutaction" prefHeight="40.0" prefWidth="60.0" style="-fx-background-color: rgba(255, 255, 255, 0);">
+                     <graphic>
+                        <ImageView fitHeight="28.0" fitWidth="58.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@imageBeautysalon/3889524.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</StackPane>

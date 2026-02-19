@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="408.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.beautySalonPro.servicecontroller">
+   <children>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="408.0">
+         <children>
+            <Label layoutX="-6.0" layoutY="-7.0" prefHeight="610.0" prefWidth="420.0" style="-fx-background-color: #ffff;" />
+            <ImageView fitHeight="259.0" fitWidth="449.0" layoutX="-2.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@imageBeautysalon/istockphoto-1390665987-1024x1024.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutY="258.0" prefHeight="342.0" prefWidth="408.0" style="-fx-background-color: #ffffff;" textFill="#eeb9ce" />
+            <Label layoutX="234.0" layoutY="146.0" prefHeight="53.0" prefWidth="175.0" style="-fx-background-color: #eeb9ce;" />
+            <Text layoutX="262.0" layoutY="174.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Service Management" wrappingWidth="121.169921875">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Text>
+            <Button fx:id="hair" layoutX="100.0" layoutY="227.0" mnemonicParsing="false" onAction="#hairaction" prefHeight="45.0" prefWidth="200.0" stylesheets="@style.css" text="Hair cuts" />
+            <Button fx:id="color" layoutX="100.0" layoutY="293.0" mnemonicParsing="false" onAction="#colraction" prefHeight="45.0" prefWidth="200.0" stylesheets="@style.css" text="Coloring" />
+            <Button fx:id="style" layoutX="100.0" layoutY="359.0" mnemonicParsing="false" onAction="#styleaction" prefHeight="45.0" prefWidth="200.0" stylesheets="@style.css" text="Hair Stayling" />
+            <Button fx:id="spa" layoutX="100.0" layoutY="549.0" mnemonicParsing="false" onAction="#spaaction" prefHeight="45.0" prefWidth="200.0" stylesheets="@style.css" text="Body SPA" />
+            <Button fx:id="makeup" layoutX="100.0" layoutY="421.0" mnemonicParsing="false" onAction="#makeuoaction" prefHeight="45.0" prefWidth="200.0" stylesheets="@style.css" text="Mack up " />
+            <Button fx:id="nails" layoutX="100.0" layoutY="486.0" mnemonicParsing="false" onAction="#nailsaction" prefHeight="45.0" prefWidth="200.0" stylesheets="@style.css" text="Nails" />
+            <ImageView fitHeight="45.0" fitWidth="36.0" layoutX="109.0" layoutY="232.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@imageBeautysalon/49c5869f4259a9fcc3f177a8c57cbdc6.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="45.0" fitWidth="36.0" layoutX="109.0" layoutY="302.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@imageBeautysalon/14437121.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="36.0" fitWidth="36.0" layoutX="109.0" layoutY="364.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@imageBeautysalon/5498731.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="37.0" fitWidth="36.0" layoutX="118.0" layoutY="493.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@imageBeautysalon/3789987.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="45.0" fitWidth="47.0" layoutX="109.0" layoutY="428.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@imageBeautysalon/240_F_185131429_GyhUtzhtX5ubzhRXhtKUSnb825TNg75n.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="31.0" fitWidth="57.0" layoutX="117.0" layoutY="556.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@imageBeautysalon/1005763.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="back" fitHeight="27.0" fitWidth="27.0" layoutX="14.0" layoutY="14.0" onMouseClicked="#backaction" onMousePressed="#backaction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@imageBeautysalon/back.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

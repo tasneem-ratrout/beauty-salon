@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="408.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.beautySalonPro.usermangcontroller">
+   <children>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="408.0">
+         <children>
+            <Label layoutX="-6.0" layoutY="-7.0" prefHeight="610.0" prefWidth="420.0" style="-fx-background-color: #ffff;" />
+            <ImageView fitHeight="323.0" fitWidth="417.0" layoutX="-2.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@imageBeautysalon/istockphoto-2150776295-1024x1024.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="-2.0" layoutY="273.0" prefHeight="342.0" prefWidth="417.0" style="-fx-background-color: #eeb9ce;" textFill="#eeb9ce" />
+            <Label layoutX="234.0" layoutY="146.0" prefHeight="53.0" prefWidth="175.0" style="-fx-background-color: #eeb9ce;" />
+            <Text layoutX="262.0" layoutY="174.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User Management" wrappingWidth="121.169921875">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Text>
+            <Button fx:id="enteraction" layoutX="104.0" layoutY="408.0" mnemonicParsing="false" onAction="#enteractionevent" prefHeight="45.0" prefWidth="200.0" stylesheets="@style.css" text="Enter" />
+            <Label layoutX="-3.0" layoutY="312.0" prefHeight="53.0" prefWidth="96.0" style="-fx-background-color: #eeb9ce;" text=" username:">
+               <font>
+                  <Font name="Bell MT" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="69.0" layoutY="279.0" prefHeight="39.0" prefWidth="300.0" text="Enter username to modify his data">
+               <font>
+                  <Font name="Bell MT" size="14.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="buttenusermange" fitHeight="31.0" fitWidth="58.0" layoutX="14.0" layoutY="20.0" onMouseClicked="#buttenmangeaction" onMousePressed="#buttenmangeaction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@imageBeautysalon/back.png" />
+               </image>
+            </ImageView>
+            <TextArea fx:id="usertextarea" layoutX="77.0" layoutY="320.0" prefHeight="37.0" prefWidth="330.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>
